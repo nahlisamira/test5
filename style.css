@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins';
+}
+body{
+    width: 100%;
+}
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: black;
+}
+.navbar .logo h1{
+    color: white;
+    cursor: pointer;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navbar .menu li .dropdown{
+    position: relative;
+    display: inline-block;   
+}
+.navbar .menu li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+.navbar .menu li .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.navbar .menu li .active{
+    border-bottom: 4px solid rgba(31, 215, 232, 0.873);
+}
+.navbar .menu li a:hover{
+    border-bottom: 4px solid rgba(31, 215, 232, 0.873) ;
+}
+.content{
+    background-image: url(https://cdn.pixabay.com/photo/2022/02/18/06/17/futuristic-7020072_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    height: 100vh;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 25px;
+    margin-top:20px;
+    font-family: 'poppins';
+    font-weight: bold;
+    
+}
+.content .btn{
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+content .btn:active {
+    scale: 0.92;
+}
+ .content .btn:hover{
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681)0%, rgba(31, 215, 232, 0.873)60%);
+    color: rgba(2, 2, 38);
+ }
+.produits_text{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: black;
+}
+.section_produits{
+    padding: 40px 5%;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+}
+.produits .carte{
+    width: 310px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0 , 0 , 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.produits .carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.produits .carte .prix{
+    color:  rgba(31, 215, 232, 0.873);
+    font-size: 20px;
+    font-weight: bold;
+}
+.produits .carte .achat{
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 600;
+    transition: 0.6s;       
+}
+.produits .carte .achat:active{
+    scale: 0.92;
+}
+.produits .carte .achat:hover{
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681)0%, rgba(31, 215, 232, 0.873)60%);
+    color: rgba(2, 2, 38);
+ }
